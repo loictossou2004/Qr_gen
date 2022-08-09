@@ -4,27 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
     
-    <div class="Full-page">
-        <div class="navbar">
-            <div>
-                <a href="#">Qr_Gen</a>
-            </div>
-            <nav>
-                <ul id="items">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Login</a></li>
+    <!-- NAVBAR -->
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="" class="nav_logo">Qr_Gen</a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link">
+                            <i class="uil uil-airplay nav_icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">
+                            <i class="uil uil-user nav_icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class="uil uil-file-alt nav_icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#service" class="nav_link">
+                            <i class="uil uil-briefcase-alt nav_icon"></i> Services
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
-    </div>
+                <i class="uil uil-times nav_close" id="nav-close"></i>
+            </div>
+            <div class="nav_btn">
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+        <main class="main">
+            <!-- HOME -->
+            <section class="home section" id="home">
+                <div class="home_container container grid">
+                    <div class="home_content grid">
+                        <div class="home_social">
+                            <a href="#" class="home_social-icon" target="_blank">
+                                <i class="uil uil-linkedin"></i>
+                            </a>
+                            <a href="#" class="home_social-icon" target="_blank">
+                                <i class="uil uil-github"></i>
+                            </a>
+                        </div>
+
+                        <div class="home_img">
+                            <img src="img/phone.png" alt="">
+                        </div>
+
+                        <div class="home_data">
+                            <h1 class="home_title">Hi, Welcome on Qr_Gen</h1>
+                            <h3 class="home_subtitle">Frontend Developer</h3>
+                            <p class="home_description">A platform that allows users generate QR code that specifically does something when scanned.</p>
+                            <a href="#" class="button button--flex">Voir plus
+                                <i class="uil uil-message button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+    <script src="js/main.js"></script>
 
 </body>
 </html>
